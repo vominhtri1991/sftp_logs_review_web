@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Plushiness 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131117
+
+-->
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SFTP Log Searching</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="{% static 'sftplog_review/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'sftplog_review/fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'sftplog_review/main.css' %}" rel="stylesheet" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<span class="icon icon-group"></span>
+			<h1><a href="#">SFTP Review Log</a></h1>
+			<span>Build By <a href="http://vmt1991.pythonanywhere.com/" rel="nofollow">vmt1991</a></span>
+		</div>
+		<div id="triangle-up"></div>
+	</div>
+</div>
+<div id="menu-wrapper">
+		<div id="menu">
+			<ul>
+			<li class="current_page_item"><a href="{% url 'home' %}" accesskey="1" title="">Home</a></li>
+				<li><a href="{% url 'upload' %}" accesskey="2" title="">UpLoad Log</a></li>
+				<li><a href="{% url 'search' %}" accesskey="3" title="">Searching</a></li>
+				<li><a href="{% url 'about' %}" accesskey="4" title="">About Us</a></li>
+				
+			</ul>
+		</div>
+</div>
+
+	<div id="featured-wrapper">
+	
+		<h2>SFTP Server: {{server}} -- Logs From: {{begin_time}}</h2>
+
+		<div class="s002">
+
+      <form  method="post">
+      	   {% csrf_token %}
+               <div class="inner-form">
+          <div class="input-field first-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+              </svg>
+            </div>
+            <input id="search" type="text" placeholder="Log Search Condition:" />
+          </div>
+          <div class="input-field second-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
+              </svg>
+            </div>
+            <input class="datepicker" id="depart" type="text" placeholder="30 Dec 2020" name="begin"/>
+          </div>
+          <div class="input-field third-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
+              </svg>
+            </div>
+            <input class="datepicker" id="return" type="text" placeholder="09 Jan 2021" name="end" />
+          </div>
+          <div class="input-field fouth-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+              </svg>
+            </div>
+           <input type="text" name="user" value="All Users" onfocus="this.value=''">
+          </div>
+          <div class="input-field fifth-wrap">
+            <button class="btn-search" type="submit">SEARCH</button>
+          </div>
+        </div>	
+      </form>
+    </div>
+    <script src="{% static 'sftplog_review/choices.js' %}"></script>
+    <script src="{% static 'sftplog_review/flatpickr.js' %}"></script>
+    <script>
+      flatpickr(".datepicker",
+      {});
+
+    </script>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
+
+    </script>
+
+	</div>
+</div>
+<div id="stamp" class="container">
+	<div class="hexagon"><span class="icon icon-wrench"></span></div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+Dec 13 12:15:58 RH-Control internal-sftp[11825]: session opened for local user sftpuser02 from [192.168.9.1]
+Dec 13 12:15:58 RH-Control internal-sftp[11825]: received client version 6
+Dec 13 12:15:58 RH-Control internal-sftp[11825]: realpath "."
+Dec 13 12:15:58 RH-Control internal-sftp[11825]: opendir "/sftp_upload"
+Dec 13 12:16:00 RH-Control internal-sftp[11825]: closedir "/sftp_upload"
+Dec 13 12:16:15 RH-Control internal-sftp[11825]: session closed for local user sftpuser02 from [192.168.9.1]
+Dec 13 12:16:41 RH-Control internal-sftp[11843]: session opened for local user sftpuser01 from [192.168.9.1]
+Dec 13 12:16:41 RH-Control internal-sftp[11843]: received client version 6
+Dec 13 12:16:41 RH-Control internal-sftp[11843]: realpath "."
+Dec 13 12:16:41 RH-Control internal-sftp[11843]: opendir "/sftp_upload"
+Dec 13 12:16:43 RH-Control internal-sftp[11843]: closedir "/sftp_upload"
+Dec 13 12:57:02 RH-Control internal-sftp[11788]: session closed for local user sftpuser01 from [192.168.9.1]
+Dec 13 12:57:02 RH-Control internal-sftp[11843]: session closed for local user sftpuser01 from [192.168.9.1]
+Dec 13 12:57:02 RH-Control internal-sftp[11772]: session closed for local user root from [192.168.9.1]
+Jan 16 12:35:20 RH-Control internal-sftp[84401]: session opened for local user sftpuser01 from [192.168.129.9]
+Jan 16 12:35:20 RH-Control internal-sftp[84401]: received client version 6
+Jan 16 12:35:20 RH-Control internal-sftp[84401]: realpath "."
+Jan 16 12:35:20 RH-Control internal-sftp[84401]: opendir "/sftp_upload"
+Jan 16 12:35:21 RH-Control internal-sftp[84401]: closedir "/sftp_upload"
+Jan 16 12:35:22 RH-Control internal-sftp[84401]: realpath "/sftp_upload/users_pdf"
+Jan 16 12:35:22 RH-Control internal-sftp[84401]: lstat name "/sftp_upload/users_pdf"
+Jan 16 12:35:22 RH-Control internal-sftp[84401]: opendir "/sftp_upload/users_pdf"
+Jan 16 12:35:24 RH-Control internal-sftp[84401]: closedir "/sftp_upload/users_pdf"
+Jan 16 12:35:28 RH-Control internal-sftp[84401]: open "/sftp_upload/users_pdf/db2.txt" flags WRITE,CREATE,TRUNCATE,EXCL mode 0666
+Jan 16 12:35:28 RH-Control internal-sftp[84401]: close "/sftp_upload/users_pdf/db2.txt" bytes read 0 written 432
+Jan 16 12:35:28 RH-Control internal-sftp[84401]: set "/sftp_upload/users_pdf/db2.txt" modtime 20180926-15:32:50
+Jan 16 12:35:28 RH-Control internal-sftp[84401]: open "/sftp_upload/users_pdf/IBM.txt" flags WRITE,CREATE,TRUNCATE,EXCL mode 0666
+Jan 16 12:35:28 RH-Control internal-sftp[84401]: close "/sftp_upload/users_pdf/IBM.txt" bytes read 0 written 3911
+Jan 16 12:35:28 RH-Control internal-sftp[84401]: set "/sftp_upload/users_pdf/IBM.txt" modtime 20191024-06:40:52
+Jan 16 12:35:28 RH-Control internal-sftp[84401]: opendir "/sftp_upload/users_pdf"
+Jan 16 12:35:28 RH-Control internal-sftp[84401]: closedir "/sftp_upload/users_pdf"
+Jan 16 12:35:29 RH-Control internal-sftp[84401]: realpath "/sftp_upload/users_pdf/.."
+Jan 16 12:35:29 RH-Control internal-sftp[84401]: lstat name "/sftp_upload"
+Jan 16 12:35:34 RH-Control internal-sftp[84401]: rename old "/sftp_upload/nagios.txt" new "/sftp_upload/nagios9.txt"
+Jan 16 12:35:34 RH-Control internal-sftp[84401]: opendir "/sftp_upload"
+Jan 16 12:35:35 RH-Control internal-sftp[84401]: closedir "/sftp_upload"
+Jan 16 12:36:21 RH-Control internal-sftp[84419]: session opened for local user sftpuser02 from [192.168.129.9]
+Jan 16 12:36:21 RH-Control internal-sftp[84419]: received client version 6
+Jan 16 12:36:21 RH-Control internal-sftp[84419]: realpath "."
+Jan 16 12:36:21 RH-Control internal-sftp[84419]: opendir "/sftp_upload"
+Jan 16 12:36:22 RH-Control internal-sftp[84419]: closedir "/sftp_upload"
+Jan 16 12:36:26 RH-Control internal-sftp[84419]: remove name "/sftp_upload/sql-server.txt"
+Jan 16 12:36:26 RH-Control internal-sftp[84419]: opendir "/sftp_upload"
+Jan 16 12:36:27 RH-Control internal-sftp[84419]: closedir "/sftp_upload"
+Jan 16 12:36:32 RH-Control internal-sftp[84419]: open "/sftp_upload/script-tunning-linux.sh" flags WRITE,CREATE,TRUNCATE,EXCL mode 0666
+Jan 16 12:36:32 RH-Control internal-sftp[84419]: close "/sftp_upload/script-tunning-linux.sh" bytes read 0 written 3887
+Jan 16 12:36:32 RH-Control internal-sftp[84419]: set "/sftp_upload/script-tunning-linux.sh" modtime 20191103-08:07:34
+Jan 16 12:36:32 RH-Control internal-sftp[84419]: opendir "/sftp_upload"
+Jan 16 12:36:32 RH-Control internal-sftp[84419]: closedir "/sftp_upload"
+Jan 16 12:40:12 RH-Control internal-sftp[84435]: session opened for local user root from [192.168.129.9]
+Jan 16 12:40:12 RH-Control internal-sftp[84435]: received client version 6
+Jan 16 12:40:12 RH-Control internal-sftp[84435]: realpath "."
+Jan 16 12:40:12 RH-Control internal-sftp[84435]: opendir "/root"
+Jan 16 12:40:13 RH-Control internal-sftp[84435]: closedir "/root"
+Jan 16 12:41:01 RH-Control internal-sftp[84419]: realpath "/sftp_upload/.."
+Jan 16 12:41:01 RH-Control internal-sftp[84419]: lstat name "/"
+Jan 16 12:41:01 RH-Control internal-sftp[84419]: opendir "/"
+Jan 16 12:41:02 RH-Control internal-sftp[84419]: closedir "/"
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: realpath "/root/.."
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: lstat name "/"
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: opendir "/"
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: readlink "/bin"
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: stat name "/bin"
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: readlink "/sbin"
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: stat name "/sbin"
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: readlink "/lib"
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: stat name "/lib"
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: readlink "/lib64"
+Jan 16 12:41:22 RH-Control internal-sftp[84435]: stat name "/lib64"
+Jan 16 12:41:24 RH-Control internal-sftp[84435]: closedir "/"
+Jan 16 12:41:27 RH-Control internal-sftp[84435]: realpath "/var"
+Jan 16 12:41:27 RH-Control internal-sftp[84435]: lstat name "/var"
+Jan 16 12:41:27 RH-Control internal-sftp[84435]: opendir "/var"
+Jan 16 12:41:27 RH-Control internal-sftp[84435]: readlink "/var/run"
+Jan 16 12:41:27 RH-Control internal-sftp[84435]: stat name "/var/run"
+Jan 16 12:41:27 RH-Control internal-sftp[84435]: readlink "/var/lock"
+Jan 16 12:41:27 RH-Control internal-sftp[84435]: stat name "/var/lock"
+Jan 16 12:41:27 RH-Control internal-sftp[84435]: readlink "/var/mail"
+Jan 16 12:41:27 RH-Control internal-sftp[84435]: stat name "/var/mail"
+Jan 16 12:41:28 RH-Control internal-sftp[84435]: closedir "/var"
+Jan 16 12:41:32 RH-Control internal-sftp[84435]: realpath "/var/log"
+Jan 16 12:41:32 RH-Control internal-sftp[84435]: lstat name "/var/log"
+Jan 16 12:41:32 RH-Control internal-sftp[84435]: opendir "/var/log"
+Jan 16 12:41:33 RH-Control internal-sftp[84435]: closedir "/var/log"
